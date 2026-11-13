@@ -313,12 +313,15 @@ code {
 
 #contact a {
   display: inline-block;
-  margin-top: 16px;
   color: var(--navy);
 }
 
-#contact a + a {
-  margin-left: 20px;
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 24px;
+  margin-top: 24px;
 }
 
 nav {
@@ -363,4 +366,39 @@ a:focus-visible {
 .project-image--mobile {
   max-width: 280px;
   margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .project-card--mobile {
+    display: grid;
+    grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+    gap: 32px;
+    align-items: center;
+  }
+
+  .project-card--mobile .project-image {
+    margin-bottom: 0;
+  }
+}
+
+#skills {
+  padding: 48px 24px;
+  text-align: left;
+  border-top: 1px solid var(--border);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+
+.skills-list li {
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
 }

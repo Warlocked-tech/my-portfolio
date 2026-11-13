@@ -3,6 +3,7 @@ import './style.css'
 document.querySelector('#app').innerHTML = `
 <nav aria-label="Main navigation">
   <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
 </nav>
 <section id="center">
@@ -39,23 +40,25 @@ document.querySelector('#app').innerHTML = `
     </p>
   </article>
 
-  <article class="project-card">
+  <article class="project-card project-card--mobile">
     <img
       class="project-image project-image--mobile"
       src="/images/abysstunes-home.png"
       alt="abysstunes landing page"
       loading="lazy"
     >
-    <h3>AbyssTunes</h3>
-    <p>
-      A mood-based Android music app with a deep-sea theme.
-    </p>
-    <p>
-      Built the interface, mood selection, playlist navigation, and whale and bubble animations.
-    </p>
-    <p>
-      Technologies: Kotlin, Jetpack Compose, Jetpack Navigation
-    </p>
+    <div class="project-details">
+      <h3>AbyssTunes</h3>
+      <p>
+        A mood-based Android music app with a deep-sea theme.
+      </p>
+      <p>
+        Built the interface, mood selection, playlist navigation, and whale and bubble animations.
+      </p>
+      <p>
+        Technologies: Kotlin, Jetpack Compose, Jetpack Navigation
+      </p>
+    </div>
   </article>
 
   <article class="project-card">
@@ -78,11 +81,29 @@ document.querySelector('#app').innerHTML = `
   </article>
 </section>
 
+<section id="skills">
+  <h2>Skills & Tools</h2>
+  <ul class="skills-list">
+    <li>HTML & CSS</li>
+    <li>JavaScript</li>
+    <li>PHP & Laravel</li>
+    <li>MySQL</li>
+    <li>Kotlin & Jetpack Compose</li>
+    <li>Git & GitHub</li>
+    <li>Azure Virtual Machines & IIS</li>
+    <li>Figma</li>
+  </ul>
+</section>
+
 <section id="contact">
   <h2>Contact</h2>
   <p>Interested in working together? Get in touch.</p>
-  <a href="mailto:ioriyamauchi24@gmail.com">Email me</a>
-  <a href="https://github.com/Warlocked-tech">GitHub</a>
+
+  <div class="contact-links">
+    <a href="mailto:ioriyamauchi24@gmail.com">Email me</a>
+    <a href="https://github.com/Warlocked-tech">GitHub</a>
+    <a href="/iori-yamauchi-resume.pdf" download>Download resume</a>
+  </div>
 </section>
 
 `
