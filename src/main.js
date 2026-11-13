@@ -1,11 +1,14 @@
 import './style.css'
 
 document.querySelector('#app').innerHTML = `
+<a class="skip-link" href="#main-content">Skip to content</a>
 <nav aria-label="Main navigation">
   <a href="#projects">Projects</a>
   <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
 </nav>
+
+<main id="main-content" tabindex="-1">
 <section id="center">
   <div>
     <h1>Iori Yamauchi</h1>
@@ -38,6 +41,9 @@ document.querySelector('#app').innerHTML = `
     <p>
       Technologies: Laravel, Livewire, Tailwind CSS, MySQL, Python
     </p>
+    <a class="project-link" href="https://ced-vault.onrender.com">
+      Visit CED-Vault
+    </a>
   </article>
 
   <article class="project-card project-card--mobile">
@@ -105,5 +111,11 @@ document.querySelector('#app').innerHTML = `
     <a href="/iori-yamauchi-resume.pdf" download>Download resume</a>
   </div>
 </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Iori Yamauchi</p>
+  <a href="#center">Back to top</a>
+</footer>
 
 `
