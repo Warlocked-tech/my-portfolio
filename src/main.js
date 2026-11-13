@@ -1,7 +1,4 @@
 import './style.css'
-import heroImg from './assets/hero.png'
-import javascriptLogo from './assets/javascript.svg'
-import viteLogo from './assets/vite.svg'
 
 document.querySelector('#app').innerHTML = `
 <nav aria-label="Main navigation">
@@ -12,16 +9,21 @@ document.querySelector('#app').innerHTML = `
   <div>
     <h1>Iori Yamauchi</h1>
     <p>Hi, I’m Iori Yamauchi, a fourth-year BS Information Technology student and aspiring software engineer. I enjoy building websites and turning ideas into projects, while exploring app and game development. Through personal and school projects, I’m building my skills and learning something new with every challenge.</p>
+    <a class="primary-link" href="#projects">View projects</a>
   </div>
 </section>
-
-<div class="ticks"></div>
 
 <section id="projects">
   <h2>Projects</h2>
   <p>A selection of my personal and school projects.</p>
 
   <article class="project-card">
+    <img
+      class="project-image"
+      src="/images/ced-vault-dashboard.png"
+      alt="CED-Vault landing page showing the document management system introduction and login options"
+      loading="lazy"
+    >
     <h3>CED-Vault</h3>
     <p>
       An academic document management system with role-based access,
@@ -38,6 +40,12 @@ document.querySelector('#app').innerHTML = `
   </article>
 
   <article class="project-card">
+    <img
+      class="project-image project-image--mobile"
+      src="/images/abysstunes-home.png"
+      alt="abysstunes landing page"
+      loading="lazy"
+    >
     <h3>AbyssTunes</h3>
     <p>
       A mood-based Android music app with a deep-sea theme.
@@ -51,6 +59,12 @@ document.querySelector('#app').innerHTML = `
   </article>
 
   <article class="project-card">
+    <img
+      class="project-image"
+      src="/images/deep-sea-ocean.png"
+      alt="deep-sea-ocean screenshot"
+      loading="lazy"
+    >
     <h3>Deep Sea Ocean</h3>
     <p>
       A web application with real-time messaging, hosted on Microsoft Azure.
@@ -71,6 +85,4 @@ document.querySelector('#app').innerHTML = `
   <a href="https://github.com/Warlocked-tech">GitHub</a>
 </section>
 
-<div class="ticks"></div>
-<section id="spacer"></section>
 `
