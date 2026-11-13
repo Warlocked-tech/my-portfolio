@@ -24,7 +24,7 @@ document.querySelector('#app').innerHTML = `
   <article class="project-card">
     <img
       class="project-image"
-      src="/images/ced-vault-dashboard.png"
+      src="/images/ced-vault-dashboard.webp"
       alt="CED-Vault landing page showing the document management system introduction and login options"
       loading="lazy"
     >
@@ -49,7 +49,7 @@ document.querySelector('#app').innerHTML = `
   <article class="project-card project-card--mobile">
     <img
       class="project-image project-image--mobile"
-      src="/images/abysstunes-home.png"
+      src="/images/abysstunes-home.webp"
       alt="abysstunes landing page"
       loading="lazy"
     >
@@ -70,7 +70,7 @@ document.querySelector('#app').innerHTML = `
   <article class="project-card">
     <img
       class="project-image"
-      src="/images/deep-sea-ocean.png"
+      src="/images/deep-sea-ocean.webp"
       alt="deep-sea-ocean screenshot"
       loading="lazy"
     >
