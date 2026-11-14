@@ -27,8 +27,11 @@ document.querySelector('#app').innerHTML = `
       src="/images/ced-vault-dashboard.webp"
       alt="CED-Vault landing page showing the document management system introduction and login options"
       loading="lazy"
+      width="1917"
+      height="933"
     >
     <h3>CED-Vault</h3>
+    <p class="project-status">Capstone project · Completed</p>
     <p>
       An academic document management system with role-based access,
       document tracking, audit logs, and anomaly detection.
@@ -50,8 +53,10 @@ document.querySelector('#app').innerHTML = `
     <img
       class="project-image project-image--mobile"
       src="/images/abysstunes-home.webp"
-      alt="abysstunes landing page"
+      alt="alt="AbyssTunes home screen with ocean-themed mood selection""
       loading="lazy"
+      width="303"
+      height="695"
     >
     <div class="project-details">
       <h3>AbyssTunes</h3>
@@ -71,8 +76,10 @@ document.querySelector('#app').innerHTML = `
     <img
       class="project-image"
       src="/images/deep-sea-ocean.webp"
-      alt="deep-sea-ocean screenshot"
+      alt="alt="Deep Sea Ocean message form above floating sea creatures representing user messages""
       loading="lazy"
+      width="1098"
+      height="530"
     >
     <h3>Deep Sea Ocean</h3>
     <p>
